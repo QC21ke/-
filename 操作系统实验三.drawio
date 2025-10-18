@@ -1,9 +1,142 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0" version="28.2.7">
   <diagram name="第 1 页" id="r91-iE0PBNyhKs3FTTNs">
-    <mxGraphModel>
+    <mxGraphModel dx="2015" dy="872" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-2" target="HaJiARoL8m4EYfBHPlfT-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-2" value="开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-98" y="284" width="68" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-13" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-4" target="HaJiARoL8m4EYfBHPlfT-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-4" value="输入参数:页大小、物理块数、地址序列长度" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-123" y="378" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-5" target="HaJiARoL8m4EYfBHPlfT-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-5" value="初始化变量:时间计数器=0、缺页次数=0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="75" y="315" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-6" target="HaJiARoL8m4EYfBHPlfT-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-6" value="初始化容器:逻辑地址序列、页表(初始-1)、最近访问时间(初始0)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="82" y="439" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-7" target="HaJiARoL8m4EYfBHPlfT-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-7" value="生成第i个逻辑地址(0&amp;lt;=i&amp;lt;地址序列长度）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-138" y="489" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-8" target="HaJiARoL8m4EYfBHPlfT-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-79" y="696" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-8" value="计算页号:逻辑地址:页大小(整数除法)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-23" target="HaJiARoL8m4EYfBHPlfT-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-19" y="726" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-28" value="未找到(缺页中断)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HaJiARoL8m4EYfBHPlfT-11">
+          <mxGeometry x="-0.1748" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-10" target="HaJiARoL8m4EYfBHPlfT-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-26" value="无空闲块(内存满)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HaJiARoL8m4EYfBHPlfT-21">
+          <mxGeometry x="-0.0993" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-10" value="缺页次数+1，查找空闲物理块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="54" y="694" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-22" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-19" target="HaJiARoL8m4EYfBHPlfT-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-19" value="执行LRU算法:找到最近访问时间最早的物理块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="303" y="687" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-20" target="HaJiARoL8m4EYfBHPlfT-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-20" value="输出“置换页号”，用当前页号覆盖该物理块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="298" y="788" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-30" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-23" target="HaJiARoL8m4EYfBHPlfT-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-31" value="找到空闲块" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HaJiARoL8m4EYfBHPlfT-30">
+          <mxGeometry x="-0.025" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-33" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-23" target="HaJiARoL8m4EYfBHPlfT-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-111.99998474121094" y="864.7500915527344" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-23" value="遍历页表，查找当前页号是否在内存" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-159" y="694" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-36" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-29" target="HaJiARoL8m4EYfBHPlfT-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-29" value="将当前页号装入空闲块" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="68" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-34" target="HaJiARoL8m4EYfBHPlfT-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-34" value="输出“页面命中”及对应物理块号" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-119" y="892" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-40" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-37" target="HaJiARoL8m4EYfBHPlfT-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-37" value="更新当前物理块的最近访问时间戳(时间计数器自增)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="97" y="928" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-41" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-39" target="HaJiARoL8m4EYfBHPlfT-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-43" value="i&amp;lt;地址序列长度-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HaJiARoL8m4EYfBHPlfT-41">
+          <mxGeometry x="0.5526" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-45" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-39" target="HaJiARoL8m4EYfBHPlfT-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-46" value="i=地址序列长度-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HaJiARoL8m4EYfBHPlfT-45">
+          <mxGeometry x="-0.3174" y="-5" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-39" value="输出当前页表状态(已使用物理块的“页号一块号”映射)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="491" y="799" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-48" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="HaJiARoL8m4EYfBHPlfT-44" target="HaJiARoL8m4EYfBHPlfT-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-44" value="计算并输出缺页率(缺页次数/地址总数x100%)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="461" y="967" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HaJiARoL8m4EYfBHPlfT-47" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="289" y="1047" width="76" height="46" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
